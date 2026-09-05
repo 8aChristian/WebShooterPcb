@@ -1,0 +1,36 @@
+# Antigravity agent internal configuration
+.agents/
+.agent/
+_agents/
+_agent/
+GEMINI.md
+
+# KiCad temporary and lock files
+*.kicad_prl
+*.lck
+~*.kicad_pcb
+~*.kicad_sch
+_autosave-*
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+
+# Editor and IDE files
+.history/
+.vscode/
+.idea/
+*.swp
+*~
+
+# Backups and temporary scripts
+.mcp-backups/
+*-backups/
+*.blend1
+*.py
+WebShooter_drc_violations.json
+gerber/
+
+# Operating System
+Thumbs.db
+Desktop.ini
+.DS_Store
