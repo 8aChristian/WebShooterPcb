@@ -111,7 +111,8 @@ graph LR
 
 ### 🛠️ Layer Stackup & Dimensions
 - **Layer Count:** 2-Layer FR4 ($1.6\text{ mm}$ board thickness, $1\text{ oz} / 35\,\mu\text{m}$ copper weight).
-- **Board Dimensions:** $58.0\text{ mm} \times 44.0\text{ mm}$ with $3.0\text{ mm}$ corner radius fillets.
+- **Board Dimensions:** $38.0\text{ mm} \times 38.0\text{ mm}$ with $2.0\text{ mm}$ corner radius fillets (Ultra-compact wearable standard).
+- **Mounting Hole Grid:** 4x M2 mounting holes on a $31.0 \times 31.0\text{ mm}$ pattern ($3.5\text{ mm}$ from board edges).
 
 ### 📐 Routing Guidelines & DFM Standards Applied
 1. **Strict 45° Mitered Routing (Zero 90° Corners):**
@@ -157,9 +158,11 @@ Date: 2026-08-20
   <img src="images/pcb_iso.png" width="700" alt="3D Raytracing Render of WebShooter PCB" />
 </p>
 
-- **CAD File:** Ready-to-import 3D model exported in standard STEP format:
+- **PCB 3D Model:** Ready-to-import STEP file:
   - 📁 [`3d-model/WebShooter.step`](3d-model/WebShooter.step)
-- **Mechanical Integration:** Compatible with custom 3D printed wrist mounts and forearm enclosures (M2.5 / M3 standoff mounting).
+- **Wearable Case / Enclosure (CAD):** Parametric wrist case model for 3D printing:
+  - 📦 [`3d-model/WEBSHOOTERCASEFINAL.f3d`](3d-model/WEBSHOOTERCASEFINAL.f3d) (Autodesk Fusion 360 source archive)
+- **Mechanical Mounting:** 4x M2 mounting holes on a $31.0 \times 31.0\text{ mm}$ square grid ($3.5\text{ mm}$ edge offset), designed to mate directly with the 3D-printed enclosure standoffs.
 
 ---
 
@@ -172,6 +175,7 @@ Date: 2026-08-20
 | **Drill File** | [`gerbers/WebShooter.drl`](gerbers/WebShooter.drl) | Excellon CNC drill specifications |
 | **BOM (CSV)** | [`bom/WebShooter_BOM.csv`](bom/WebShooter_BOM.csv) | Component spreadsheet with LCSC Part Numbers |
 | **BOM (Markdown)** | [`bom/WebShooter_BOM.md`](bom/WebShooter_BOM.md) | Formatted Bill of Materials table |
+| **Case CAD (F3D)** | [`3d-model/WEBSHOOTERCASEFINAL.f3d`](3d-model/WEBSHOOTERCASEFINAL.f3d) | 3D-printable parametric enclosure design |
 
 ### 🚀 Production Parameters Recommended
 - **Base Material:** FR-4 (Tg 130–140°C).

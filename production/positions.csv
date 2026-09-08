@@ -1,20 +1,25 @@
-Ref,Val,Package,PosX,PosY,Rot,Side
-"C_FILT","100nF","C_0805_2012Metric",116.500000,-135.000000,0.000000,top
-"C_IN","10uF","C_0805_2012Metric",106.000000,-118.800000,180.000000,top
-"C_OUT","22uF","C_0805_2012Metric",106.000000,-113.000000,180.000000,top
-"D1","SS14","D_SOD-123",148.000000,-134.000000,0.000000,top
-"D2","LED_STAT","LED_0805_2012Metric",131.000000,-141.000000,0.000000,top
-"J1","ESP32_LEFT","PinSocket_1x08_P2.54mm_Vertical",121.000000,-123.000000,0.000000,top
-"J2","ESP32_RIGHT","PinSocket_1x08_P2.54mm_Vertical",139.000000,-123.000000,0.000000,top
-"J_BATT","BATT_2S","JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",113.000000,-106.500000,0.000000,top
-"J_ESC","ESC_SIG","PinHeader_1x03_P2.54mm_Vertical",147.000000,-106.500000,0.000000,top
-"J_FSR","FSR_SENSOR","JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",111.000000,-140.000000,0.000000,top
-"J_SOL","SOLENOID","JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",148.250000,-140.000000,180.000000,top
-"Q1","AO3400A","SOT-23",143.500000,-134.000000,0.000000,top
-"R_G","100","R_0805_2012Metric",144.000000,-126.000000,0.000000,top
-"R_LED","1k","R_0805_2012Metric",126.000000,-141.000000,0.000000,top
-"R_PD","10k","R_0805_2012Metric",148.000000,-129.500000,0.000000,top
-"R_PROT","1k","R_0805_2012Metric",116.500000,-130.000000,0.000000,top
-"R_PWM","100","R_0805_2012Metric",141.000000,-115.000000,0.000000,top
-"R_REF","10k","R_0805_2012Metric",116.500000,-140.000000,90.000000,top
-"U1","AMS1117-3.3","SOT-223-3_TabPin2",112.500000,-116.500000,0.000000,top
+### Footprint positions - created on 2026-09-08T15:03:46 ###
+### Printed by KiCad version 10.0.1
+## Unit = inches, Angle = deg.
+## Side : All
+# Ref     Val          Package                                     PosX       PosY       Rot  Side
+C_FILT    100nF        C_0805_2012Metric                         4.5669    -5.1575    0.0000  top
+C_IN      10uF         C_0805_2012Metric                         4.1024    -4.4291    0.0000  top
+C_OUT     22uF         C_0805_2012Metric                         4.1024    -4.9409    0.0000  top
+D1        SS14         D_SOD-123                                 5.2559    -5.0591    0.0000  top
+D2        LED_STAT     LED_0805_2012Metric                       5.2559    -4.3701    0.0000  top
+J1        ESP32_LEFT   PinSocket_1x08_P2.54mm_Vertical           4.3307    -4.3350    0.0000  top
+J2        ESP32_RIGHT  PinSocket_1x08_P2.54mm_Vertical           5.0394    -4.3350    0.0000  top
+J_BATT    BATT_2S      JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical     4.3701    -4.0866    0.0000  top
+J_ESC     ESC_SIG      PinHeader_1x03_P2.54mm_Vertical           4.9016    -4.0866   90.0000  top
+J_FSR     FSR_SENSOR   JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical     4.2913    -5.2835    0.0000  top
+J_SOL     SOLENOID     JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical     5.0197    -5.2835  180.0000  top
+Q1        AO3400A      SOT-23                                    5.2559    -4.8819    0.0000  top
+R_G       100          R_0805_2012Metric                         5.2559    -4.7244    0.0000  top
+R_LED     1k           R_0805_2012Metric                         5.2559    -4.4882    0.0000  top
+R_PD      10k          R_0805_2012Metric                         5.2559    -4.6063    0.0000  top
+R_PROT    1k           R_0805_2012Metric                         4.6654    -5.0394    0.0000  top
+R_PWM     100          R_0805_2012Metric                         4.7244    -4.1142    0.0000  top
+R_REF     10k          R_0805_2012Metric                         4.5669    -5.2835    0.0000  top
+U1        AMS1117-3.3  SOT-223-3_TabPin2                         4.1024    -4.6850   90.0000  top
+## End

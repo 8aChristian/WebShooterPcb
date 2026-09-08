@@ -494,31 +494,143 @@
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.25,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2147483647,
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.35,
         "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
-        "wire_width": 6
+        "via_diameter": 0.8,
+        "via_drill": 0.4
+      },
+      {
+        "clearance": 0.25,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.2,
+        "tuning_profile": "",
+        "via_diameter": 0.8,
+        "via_drill": 0.4
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "name": "Power_LDO",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.8,
+        "tuning_profile": "",
+        "via_diameter": 0.8,
+        "via_drill": 0.4
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "name": "Signal",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.35,
+        "tuning_profile": "",
+        "via_diameter": 0.8,
+        "via_drill": 0.4
       }
     ],
     "meta": {
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_assignments": {
+      "+3.3V": [
+        "Power_LDO"
+      ],
+      "+BATT": [
+        "Power"
+      ],
+      "ESC_PWM": [
+        "Signal"
+      ],
+      "FSR_ADC": [
+        "Signal"
+      ],
+      "FSR_IN": [
+        "Signal"
+      ],
+      "LED_A": [
+        "Signal"
+      ],
+      "LED_STAT": [
+        "Signal"
+      ],
+      "MCU_GATE": [
+        "Signal"
+      ],
+      "MCU_PWM": [
+        "Signal"
+      ],
+      "SOL_DRAIN": [
+        "Power"
+      ],
+      "SOL_GATE": [
+        "Signal"
+      ]
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "+BATT"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "SOL_DRAIN"
+      },
+      {
+        "netclass": "Power_LDO",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "ESC_PWM"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "MCU_PWM"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "MCU_GATE"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "SOL_GATE"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "LED_STAT"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "LED_A"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "FSR_IN"
+      },
+      {
+        "netclass": "Signal",
+        "pattern": "FSR_ADC"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
